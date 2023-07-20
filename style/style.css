@@ -3,14 +3,14 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/dmsans/v11/rP2Hp2ywxg089UriCZOIGA.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/dmsans/v14/rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwAopxRSW3z.ttf) format('truetype');
 }
 @font-face {
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/dmsans/v11/rP2Cp2ywxg089UriAWCrCBimDg.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/dmsans/v14/rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwAkJxRSW3z.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Jost';
@@ -44,13 +44,13 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  min-height: 100vh;
+  height: 95vh;
   display: flex;
   flex-wrap: wrap;
   padding: 20px;
 }
 .card {
-  max-width: 350px;
+  max-width: 360px;
   margin: auto;
   overflow-y: auto;
   position: relative;
@@ -73,7 +73,7 @@ body {
   height: 430px;
 }
 .card[data-state="#experience"] {
-  height: 700px;
+  height: 570px;
 }
 .card.is-active .card-header {
   height: 80px;
@@ -226,6 +226,8 @@ body {
 }
 .card-buttons button {
   flex: 1 1 auto;
+  -webkit-user-select: none;
+  -moz-user-select: none;
   user-select: none;
   background: 0;
   font-size: 13px;
@@ -261,12 +263,6 @@ body {
     opacity: 1;
   }
 }
-.card-subtitle-item {
-  font-weight: 500;
-  font-size: 13px;
-  line-height: 1.5;
-  font-family: "DM Sans", sans-serif;
-}
 .card-timeline {
   margin-top: 30px;
   position: relative;
@@ -293,7 +289,7 @@ body {
   content: attr(data-year);
   width: 10px;
   position: absolute;
-  top: 0;
+  top: 5px;
   left: -5px;
   width: 8px;
   height: 8px;
@@ -308,7 +304,7 @@ body {
 .card-item-title {
   font-weight: 500;
   font-size: 14px;
-  margin-bottom: 5px;
+  margin-top: 5px;
 }
 .card-item-desc a {
   font-size: 13px;

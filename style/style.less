@@ -13,14 +13,14 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  min-height: 100vh;
+  height: 95vh;
   display: flex;
   flex-wrap: wrap;
   padding: 20px;
 }
 
 .card {
-  max-width: 350px;
+  max-width: 360px;
   margin: auto;
   overflow-y: auto;
   position: relative;
@@ -46,7 +46,7 @@ body {
 }
 
 .card[data-state="#experience"] {
-  height: 700px;
+  height: 570px;
 }
 
 .card.is-active {
@@ -224,6 +224,8 @@ body {
 
   button {
     flex: 1 1 auto;
+    -webkit-user-select: none; 
+    -moz-user-select: none;
     user-select: none;
     background: 0;
     font-size: 13px;
@@ -269,12 +271,12 @@ body {
   }
 }
 
-.card-subtitle-item {
-  font-weight: 500;
-  font-size: 13px;
-  line-height: 1.5;
-  font-family: "DM Sans", sans-serif;
-}
+// .card-subtitle-item {
+//   font-weight: 500;
+//   font-size: 13px;
+//   line-height: 1.5;
+//   font-family: "DM Sans", sans-serif;
+// }
 
 .card-timeline {
   margin-top: 30px;
@@ -308,7 +310,7 @@ body {
     content: attr(data-year);
     width: 10px;
     position: absolute;
-    top: 0;
+    top: 5px;
     left: -5px;
     width: 8px;
     height: 8px;
@@ -329,7 +331,7 @@ body {
 .card-item-title {
   font-weight: 500;
   font-size: 14px;
-  margin-bottom: 5px;
+  margin-top: 5px;
 }
 
 .card-item-desc a {
